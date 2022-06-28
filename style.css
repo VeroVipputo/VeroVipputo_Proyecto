@@ -1,0 +1,9 @@
+:root{
+    --rosa:#F6BBBB;
+}
+
+.btn{
+    margin-right: 80px;
+    padding: 15px;
+    background-color: var(--rosa);
+}
