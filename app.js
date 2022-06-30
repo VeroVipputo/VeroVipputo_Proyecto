@@ -1,29 +1,20 @@
-const baseDeDatos = [
-    {
-        id: 1,
-        nombre: 'The Shining',
-        precio: 2000,
-    },
-    {
-        id: 2,
-        nombre: 'The Da Vinci Code',
-        precio: 2000,
-    },
-    {
-        id: 3,
-        nombre: 'El principito',
-        precio: 2000,
-    },
-    {
-        id: 4,
-        nombre: 'Sobrenatural',
-        precio: 2000,
+class BaseDeDatos {
+    constructor (id, nombre, precio){
+        this.id = id;
+        this.nombre = nombre;  
+        this.precio = precio;  
     }
+}
 
-];
+const productos = [];
+productos.push(new BaseDeDatos (1, 'The Shining', 2000));
+productos.push(new BaseDeDatos (2, 'The Da Vinci Code', 2000));
+productos.push(new BaseDeDatos (3, 'El principito', 2000));
+productos.push(new BaseDeDatos (4, 'Sobrenatural', 2000));
 
-for(let i = 0; i < baseDeDatos.length; i++ ) {
-    console.log(baseDeDatos[i].nombre);
+
+for(let i = 0; i < productos.length; i++ ) {
+    console.log(productos[i].nombre);
 }
 
 let total = 0;
