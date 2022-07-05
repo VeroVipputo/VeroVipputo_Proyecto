@@ -1,9 +1,29 @@
 :root{
-    --rosa:#F6BBBB;
+    --rojo: #AC0511;
+    --negro: #000000;
+    --blanco: #ffffff;
+}
+body, header{
+    background-color: var(--negro);
+}
+.navbar bg-light, .container-fluid, .navbar-brand{
+    background: #000000
+}
+.container{
+    margin-top: 100px;
+}
+.img-responsive, .img-thumbnail{
+    background:var(--negro);
 }
 
 .btn{
     margin-right: 80px;
     padding: 15px;
-    background-color: var(--rosa);
-}
+    background-color: var(--rojo);
+    color: var(--blanco);
+} 
+
+.pie{
+    margin-top: 50px;
+    width: auto;
+    height: 5px}
